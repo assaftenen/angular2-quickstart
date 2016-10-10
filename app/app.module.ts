@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 import { HttpModule }    from '@angular/http';
 import { RouterModule }  from '@angular/router';
+import { HeroSearchComponent} from './hero-search.component'
+import './rxjs-extensions';
+
+
 
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular2-in-memory-web-api';
@@ -45,6 +49,7 @@ import { HeroService }          from './hero.service';
         DashboardComponent,
         HeroDetailComponent,
         HeroesComponent,
+        HeroSearchComponent
     ],
     providers: [
         HeroService,
